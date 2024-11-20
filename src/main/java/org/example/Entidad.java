@@ -6,7 +6,7 @@ import java.awt.*;
 public class Entidad implements IAtacable {
 
     private String nombre;
-    private int vidaActual, ataque, defensa;
+    private int vidaActual, ataque, defensa; //, habilidadEspecial;
     private double vidaMax;
     private boolean estaVivo;
     private JProgressBar barraVida;
@@ -20,7 +20,7 @@ public class Entidad implements IAtacable {
         vidaActual = (int) vidaMax;
         estaVivo = true;
         barraVida = new JProgressBar(0, (int) vidaMax);
-        barraVida.setPreferredSize(new Dimension(100, 25));
+        barraVida.setPreferredSize(new Dimension(150, 25));
         establecerVida(vidaActual);
 
     }
@@ -35,11 +35,11 @@ public class Entidad implements IAtacable {
 
     @Override
     public void atacar(IAtacable enemigo) {
-        enemigo.recibirHerida(ataque);
+        enemigo.recibirAtaque(ataque);
     }
 
     @Override
-    public void recibirHerida(int cantidad) {
+    public void recibirAtaque(int cantidad) {
         if(estaVivo) {
             int cantidadTotal = cantidad - defensa;
             if(cantidadTotal <= 0) cantidadTotal = 1;

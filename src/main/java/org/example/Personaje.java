@@ -1,6 +1,6 @@
 package org.example;
 
-public class Personaje extends Entidad{
+public class Personaje extends Entidad {
 
     private int nivel, oro, exp, expNecesaria;
 
