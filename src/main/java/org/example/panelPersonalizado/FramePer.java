@@ -1,4 +1,4 @@
-package panelPersonalizado;
+package org.example.panelPersonalizado;
 
 import javax.swing.*;
 
