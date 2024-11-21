@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="Bug de imagenes solucionado, implementacion del metodo de combate basico">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Tienda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaFinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Entidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Entidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Exploracion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Exploracion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Personaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Personaje.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +113,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732157619099</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Bug de imagenes solucionado, implementacion del metodo de combate basico">
+      <option name="closed" value="true" />
+      <created>1732189569763</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1732189569763</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

@@ -14,7 +14,8 @@ public class Personaje extends Entidad {
 
     public void subirExp(int cantidad) {
         exp+= cantidad;
-        if(exp >= expNecesaria) subirNivel();
+        while(exp >= expNecesaria) subirNivel();
+
     }
 
     public void subirNivel(){
