@@ -1,7 +1,5 @@
 package org.example;
-
 import org.example.panelPersonalizado.FramePer;
-
 import javax.swing.*;
 import java.awt.*;
 
@@ -25,7 +23,7 @@ public class VentanaPrincipal  {
         panelPrincipal = new JPanel(new BorderLayout());
         panelSuperior = new JPanel();
         panelInferior = new JPanel();
-        // Crear panel de seleccion de personaje
+// Crear panel de seleccion de personaje
 
         etNombre = new JLabel(pj.getNombre() + "  ");
         etNivel = new JLabel(" Nivel: " + pj.getNivel());
@@ -35,7 +33,7 @@ public class VentanaPrincipal  {
         etImagen = new JLabel();
 
         botonExplorar = new JButton("Explorar");
-        // Crear boton de seleccion de personaje y tambien crear logica para seleccionar pj
+// Crear boton de seleccion de personaje y tambien crear logica para seleccionar pj
 
     }
 
@@ -46,8 +44,8 @@ public class VentanaPrincipal  {
 
     public void iniciarEscena(){
 
+//elegirPersonaje()  ---> crear metodo y clase
         modFuentes();
-         //elegirPersonaje()  ---> crear metodo y clase
         panelSuperior.add(etNombre);
         panelSuperior.add(etNivel);
         panelSuperior.add(etExp);
@@ -74,6 +72,8 @@ public class VentanaPrincipal  {
     private void nuevaExploracion() {
         Exploracion ex = new Exploracion(this);
         ex.comenzarExploracion();
+        panelPrincipal.add(panelSuperior, BorderLayout.NORTH);
+        marco.repaint();
     }
 
     public Personaje getPj(){

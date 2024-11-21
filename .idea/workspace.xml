@@ -4,14 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="Creando Jframe con imagen">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Enemigo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Exploracion.java" afterDir="false" />
+    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="Añadiendo clase exploracion, falta crear interfaz de seleccion de personajes y muerte">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SPRITES/magoscuro.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/mago scuro.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Entidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Entidad.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/IAtacable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/IAtacable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Personaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Personaje.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/3cabezas.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/3cabezas.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/Circulorojo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/YouDied.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/anaconda.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/anaconda.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/caballeroatras.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/caballeroatras.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/caballerofrente.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/caballerofrente.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/dragon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/dragon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/druida.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/druida.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/espiritu.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/espiritu.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/goblin.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/goblin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/golem.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/golem.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/mago scuro.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/mago oscuro.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/magoatras.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/magoatras.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/magofrente.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/magofrente.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/paladinatras.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/paladinatras.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SPRITES/paladinfrente.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/SPRITES/paladinfrente.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Enemigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Enemigo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Exploracion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Exploracion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,10 +84,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src" />
+      <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\main" />
       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\SPRITES" />
       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\main\java\org\example" />
       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\main\SPRITES" />
-      <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\main" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -102,12 +116,21 @@
       <option name="project" value="LOCAL" />
       <updated>1732062136426</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Añadiendo clase exploracion, falta crear interfaz de seleccion de personajes y muerte">
+      <option name="closed" value="true" />
+      <created>1732111176734</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1732111176734</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Rpg Poo con jframe" />
     <MESSAGE value="Creando Jframe con imagen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Creando Jframe con imagen" />
+    <MESSAGE value="Añadiendo clase exploracion, falta crear interfaz de seleccion de personajes y muerte" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadiendo clase exploracion, falta crear interfaz de seleccion de personajes y muerte" />
   </component>
 </project>

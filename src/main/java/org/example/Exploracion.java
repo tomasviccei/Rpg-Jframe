@@ -83,6 +83,42 @@ public class Exploracion {
     }
 
     private void atacar() {
+
+        int damage;
+
+        pj.atacar(enemigo);
+        infoTexto.setText(infoTexto.getText() + pj.getNombre() +
+                " Realiza un ataque causando " + pj.getAtaque() +" de daño" + ".\n" + ".\n");
+        damage = pj.getAtaque() - enemigo.getDefensa();
+        if(damage <= 0)  damage = 1;
+        infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha recibido " + damage + " puntos de daño" + ".\n" + ".\n");
+
+        enemigo.establecerVida(enemigo.getVidaActual());
+
+        if(!enemigo.isEstaVivo()) {
+            enemigoDerrotado();
+        }else {
+            enemigo.atacar(pj);
+            infoTexto.setText(infoTexto.getText() + enemigo.getNombre() +
+                    " Realiza un ataque que causa " + enemigo.getAtaque() + " puntos de daño"+ ".\n" + ".\n");
+            damage = enemigo.getAtaque() - pj.getDefensa();
+            if(damage <= 0)  damage = 1;
+            infoTexto.setText(infoTexto.getText() + pj.getNombre() + " ha recibido un ataque que le causa " + damage + " puntos de daño " + ".\n" + ".\n");
+            pj.establecerVida(pj.getVidaActual());
+
+            if(!pj.isEstaVivo()) derrota();
+        }
+
+    }
+
+
+
+    private void enemigoDerrotado() {
+
+    }
+    private void derrota() {
+        //Usar este metodo para verificar y mostrar la pantalla de muerte
+
     }
 
 }
