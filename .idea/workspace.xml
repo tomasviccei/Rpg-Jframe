@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="Arreglando bugs y demas detalles">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/clases/Caballero.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/clases/Mago.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/clases/Paladin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="Ventana de inicio y clases fr &amp; fs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +136,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732191723378</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Ventana de inicio y clases fr &amp; fs">
+      <option name="closed" value="true" />
+      <created>1732198083266</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1732198083266</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -154,6 +154,7 @@
     <MESSAGE value="Bug de imagenes solucionado, implementacion del metodo de combate basico" />
     <MESSAGE value="Creando tienda, pelea jefe final y solucionando bugs" />
     <MESSAGE value="Arreglando bugs y demas detalles" />
-    <option name="LAST_COMMIT_MESSAGE" value="Arreglando bugs y demas detalles" />
+    <MESSAGE value="Ventana de inicio y clases fr &amp; fs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ventana de inicio y clases fr &amp; fs" />
   </component>
 </project>
