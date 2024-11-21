@@ -19,8 +19,13 @@ public class Exploracion {
 
     private static int numExploracion = 0;
 
+    private VentanaPrincipal vp;
+
+    private boolean esJefe = false;
+
     public Exploracion(VentanaPrincipal vp) {
 
+        this.vp = vp;
         pj = vp.getPj();
         marco = new JDialog();
 
@@ -50,6 +55,8 @@ public class Exploracion {
         int numRandom = (int) (Math.random()*100) + numExploracion;
         numExploracion ++;
         enemigo = Enemigo.generarEnemigo(numRandom);
+
+        if(enemigo.getNombre().equals("Jefe")) esJefe = true;
     }
     
     private void iniciarInterfaz(){
@@ -68,6 +75,7 @@ public class Exploracion {
 
         panelInferior.add(botAtacar);
         panelInferior.add(new JLabel("           "));
+        if(esJefe) botHuir.setEnabled(false);
         panelInferior.add(botHuir);
 
         panelPrincipal.add(panelSuperior, BorderLayout.NORTH);
@@ -75,13 +83,15 @@ public class Exploracion {
         panelPrincipal.add(panelEnemigo, BorderLayout.EAST);
 
         marco.add(panelPrincipal);
-        marco.setSize(800,600);
+        marco.setSize(800,700);
         marco.setLocationRelativeTo(null);
         marco.setModal(true);
         marco.setVisible(true);
         
     }
 
+
+    //Metodo de ataque
     private void atacar() {
 
         int damage;
@@ -94,10 +104,12 @@ public class Exploracion {
         infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha recibido " + damage + " puntos de daño" + ".\n" + ".\n");
 
         enemigo.establecerVida(enemigo.getVidaActual());
-
+        //Chequea que el enemigo este muerto
         if(!enemigo.isEstaVivo()) {
             enemigoDerrotado();
-        }else {
+        }
+        //Hace que el enemigo ataque/ se podria implementar que utilice una habilidad especial
+        else {
             enemigo.atacar(pj);
             infoTexto.setText(infoTexto.getText() + enemigo.getNombre() +
                     " Realiza un ataque que causa " + enemigo.getAtaque() + " puntos de daño"+ ".\n" + ".\n");
@@ -114,11 +126,34 @@ public class Exploracion {
 
 
     private void enemigoDerrotado() {
+        botAtacar.setEnabled(false);
+        botHuir.setText("Salir");
+
+        infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha sido derrotado.\n"
+                + "Has obtenido" + enemigo.getPremioOro() + " oro.\n"
+                + "Ganas" + enemigo.getPremioExp() + " puntos de experiencia");
+
+        pj.subirExp(enemigo.getPremioExp());
+        vp.getEtExp().setText(" Exp: " + pj.getExp() + "/" + pj.getExpNecesaria());
+        vp.getEtNivel().setText(" Nivel: " + pj.getNivel());
+        vp.getEtAtributos().setText(" Atck: " + pj.getAtaque() + " | Def: " + pj.getDefensa() + " Vida");
+
+        pj.setOro(pj.getOro() + enemigo.getPremioOro());
+        vp.getEtOro().setText(" $: " + pj.getOro());
+
+        if(esJefe) {
+            VentanaFinal v = new VentanaFinal(VentanaFinal.VICTORIA, pj);
+            v.abrir();
+        }
 
     }
     private void derrota() {
-        //Usar este metodo para verificar y mostrar la pantalla de muerte
 
+        VentanaFinal v = new VentanaFinal(VentanaFinal.DERROTA, pj);
+        v.abrir();
     }
 
+    public static void setNumExploracion(int numExploracion) {
+        Exploracion.numExploracion = numExploracion;
+    }
 }

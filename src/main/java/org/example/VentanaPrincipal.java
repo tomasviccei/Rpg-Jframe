@@ -10,7 +10,7 @@ public class VentanaPrincipal  {
     private JLabel etNombre, etNivel, etExp, etOro, etAtributos;
     private JLabel etImagen;
 
-    private JButton botonExplorar;
+    private JButton botonExplorar, botonTienda;
 
     private Personaje pj;
 
@@ -33,6 +33,7 @@ public class VentanaPrincipal  {
         etImagen = new JLabel();
 
         botonExplorar = new JButton("Explorar");
+        botonTienda = new JButton("Tienda");
 // Crear boton de seleccion de personaje y tambien crear logica para seleccionar pj
 
     }
@@ -56,12 +57,21 @@ public class VentanaPrincipal  {
         etImagen.setIcon(new ImageIcon("src/SPRITES/pngtree-enchanted-forest-at-night-square-format-3d-digital-illustration-of-a-image_3717224.jpg"));
         panelPrincipal.add(etImagen, BorderLayout.CENTER);
         botonExplorar.addActionListener(e -> nuevaExploracion());
+        botonTienda.addActionListener(e -> abrirTienda());
         panelInferior.add(botonExplorar);
+        panelInferior.add(botonTienda);
 
         panelPrincipal.add(panelSuperior, BorderLayout.NORTH);
         panelPrincipal.add(panelInferior, BorderLayout.SOUTH);
 
         marco.add(panelPrincipal);
+    }
+
+    private void abrirTienda() {
+        Tienda t = new Tienda(this);
+        t.abrirTienda();
+        panelPrincipal.add(panelSuperior, BorderLayout.NORTH);
+        marco.repaint();
     }
 
     private void modFuentes() {
@@ -70,10 +80,12 @@ public class VentanaPrincipal  {
     }
 
     private void nuevaExploracion() {
+
         Exploracion ex = new Exploracion(this);
         ex.comenzarExploracion();
         panelPrincipal.add(panelSuperior, BorderLayout.NORTH);
         marco.repaint();
+
     }
 
     public Personaje getPj(){
@@ -82,5 +94,21 @@ public class VentanaPrincipal  {
 
     public JPanel getPanelSup(){
         return panelSuperior;
+    }
+
+    public JLabel getEtExp() {
+        return etExp;
+    }
+
+    public JLabel getEtAtributos() {
+        return etAtributos;
+    }
+
+    public JLabel getEtNivel() {
+        return etNivel;
+    }
+
+    public JLabel getEtOro() {
+        return etOro;
     }
 }

@@ -56,7 +56,7 @@ public class Enemigo extends Entidad{
         }else if(i<100){
             e = new Enemigo(enemigoMedio[nEnemigo],nAtaque + 4,nDef+2,nvida +30, "medio" );
         }else {
-            e = new Enemigo("3cabezas",nAtaque +15,nDef+5,nvida +150, "jefe" );
+            e = new Enemigo("3cabezas",nAtaque +15,nDef+5,nvida +150, "Jefe" );
         }
         return e;
     }
