@@ -49,6 +49,7 @@ public class Enemigo extends Entidad{
 
 
     public static Enemigo generarEnemigo (int i) {
+       //Usar esta sintaxis para generar un heroe?
         Enemigo e;
         int nEnemigo = (int) (Math.random()*3);
         int nvida = (int) (Math.random()*30);
@@ -56,7 +57,7 @@ public class Enemigo extends Entidad{
         int nDef = (int) (Math.random()*2);
         if(i<30){
             e = new Enemigo(enemigoFacil[nEnemigo],nAtaque + 1,nDef,nvida +15, "facil" );
-        }else if(i<100){
+        }else if(i<180){
             e = new Enemigo(enemigoMedio[nEnemigo],nAtaque + 4,nDef+2,nvida +30, "medio" );
         }else {
             e = new Enemigo("Bestia de tres cabezas",nAtaque +15,nDef+5,nvida +150, "Jefe" );

@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="Ventana de inicio y clases fr &amp; fs" />
+    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="Ventana de inicio y clases fr &amp; fs">
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Enemigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Enemigo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clases/Caballero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/clases/Caballero.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,20 +52,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "VentanaInicial",
-    "kotlin-language-version-configured": "true",
-    "onboarding.tips.debug.path": "C:/Users/tomas/IdeaProjects/springproject/juegojava/src/main/java/org/example/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "MTHome"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;VentanaInicial&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/tomas/IdeaProjects/springproject/juegojava/src/main/java/org/example/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MTHome&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src" />

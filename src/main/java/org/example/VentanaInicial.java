@@ -20,7 +20,7 @@ public class VentanaInicial extends JFrame {
         setLayout(new BorderLayout()); // Usa BorderLayout para separar imagen y botones.
 
         // Cargar la imagen.
-        ImageIcon imagenInicio = new ImageIcon("C:\\Users\\franc\\IdeaProjects\\Rpg-Jframe\\src\\SPRITES\\Inicio.png"); // Asegúrate de que "Inicio.png" esté en la misma carpeta o usa la ruta completa.
+        ImageIcon imagenInicio = new ImageIcon("src/SPRITES/Inicio.png"); // Asegúrate de que "Inicio.png" esté en la misma carpeta o usa la ruta completa.
         JLabel etiquetaImagen = new JLabel(imagenInicio);
         etiquetaImagen.setHorizontalAlignment(SwingConstants.CENTER);
         add(etiquetaImagen, BorderLayout.CENTER);
