@@ -38,6 +38,7 @@ public class VentanaFinal {
     public void abrir(){
         mansaje();
         crearEscena();
+        marco.setUndecorated(true);
         marco.setVisible(true);
     }
 

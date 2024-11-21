@@ -10,7 +10,7 @@ public class VentanaPrincipal  {
     private JLabel etNombre, etNivel, etExp, etOro, etAtributos;
     private JLabel etImagen;
 
-    private JButton botonExplorar, botonTienda;
+    private JButton botonExplorar, botonTienda, botonSalir;
 
     private Personaje pj;
 
@@ -34,12 +34,14 @@ public class VentanaPrincipal  {
 
         botonExplorar = new JButton("Explorar");
         botonTienda = new JButton("Tienda");
+        botonSalir = new JButton("Salir");
 // Crear boton de seleccion de personaje y tambien crear logica para seleccionar pj
 
     }
 
     public void ComenzarJuego() {
         iniciarEscena();
+        marco.setUndecorated(true);
         marco.setVisible(true);
     }
 
@@ -58,8 +60,10 @@ public class VentanaPrincipal  {
         panelPrincipal.add(etImagen, BorderLayout.CENTER);
         botonExplorar.addActionListener(e -> nuevaExploracion());
         botonTienda.addActionListener(e -> abrirTienda());
+        botonSalir.addActionListener(e -> marco.dispose());
         panelInferior.add(botonExplorar);
         panelInferior.add(botonTienda);
+        panelInferior.add(botonSalir);
 
         panelPrincipal.add(panelSuperior, BorderLayout.NORTH);
         panelPrincipal.add(panelInferior, BorderLayout.SOUTH);

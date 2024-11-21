@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="Bug de imagenes solucionado, implementacion del metodo de combate basico">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Personaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Personaje.java" afterDir="false" />
+    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="Creando tienda, pelea jefe final y solucionando bugs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Enemigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Enemigo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Exploracion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Exploracion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Tienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Tienda.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +126,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732189569763</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Creando tienda, pelea jefe final y solucionando bugs">
+      <option name="closed" value="true" />
+      <created>1732190149195</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1732190149195</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -129,6 +142,7 @@
     <MESSAGE value="Creando Jframe con imagen" />
     <MESSAGE value="Añadiendo clase exploracion, falta crear interfaz de seleccion de personajes y muerte" />
     <MESSAGE value="Bug de imagenes solucionado, implementacion del metodo de combate basico" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bug de imagenes solucionado, implementacion del metodo de combate basico" />
+    <MESSAGE value="Creando tienda, pelea jefe final y solucionando bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creando tienda, pelea jefe final y solucionando bugs" />
   </component>
 </project>

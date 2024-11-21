@@ -71,7 +71,11 @@ public class Exploracion {
         panelEnemigo.add(panelEnemigoSec);
         
         botAtacar.addActionListener(e -> atacar());
-        botHuir.addActionListener(e -> marco.dispose());
+        botHuir.addActionListener(e -> {
+            numExploracion++;
+            //pj.setOro(pj.getOro() - 10);
+            marco.dispose();
+        });
 
         panelInferior.add(botAtacar);
         panelInferior.add(new JLabel("           "));
@@ -83,7 +87,8 @@ public class Exploracion {
         panelPrincipal.add(panelEnemigo, BorderLayout.EAST);
 
         marco.add(panelPrincipal);
-        marco.setSize(800,700);
+        marco.setUndecorated(true);
+        marco.setSize(900,500);
         marco.setLocationRelativeTo(null);
         marco.setModal(true);
         marco.setVisible(true);
@@ -130,13 +135,13 @@ public class Exploracion {
         botHuir.setText("Salir");
 
         infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha sido derrotado.\n"
-                + "Has obtenido" + enemigo.getPremioOro() + " oro.\n"
-                + "Ganas" + enemigo.getPremioExp() + " puntos de experiencia");
+                + "Has obtenido " + enemigo.getPremioOro() + " oro.\n"
+                + "Ganas " + enemigo.getPremioExp() + " puntos de experiencia");
 
         pj.subirExp(enemigo.getPremioExp());
         vp.getEtExp().setText(" Exp: " + pj.getExp() + "/" + pj.getExpNecesaria());
         vp.getEtNivel().setText(" Nivel: " + pj.getNivel());
-        vp.getEtAtributos().setText(" Atck: " + pj.getAtaque() + " | Def: " + pj.getDefensa() + " Vida");
+        vp.getEtAtributos().setText(" Atck: " + pj.getAtaque() + " | Def: " + pj.getDefensa() + " Vida: ");
 
         pj.setOro(pj.getOro() + enemigo.getPremioOro());
         vp.getEtOro().setText(" $: " + pj.getOro());

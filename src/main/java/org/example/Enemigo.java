@@ -31,12 +31,15 @@ public class Enemigo extends Entidad{
             case "facil":
                 premioExp = (int) (Math.random()* 6 + 1);
                 premioOro = (int) (Math.random()* 20+ 1);
+                etNombre.setForeground(Color.GREEN);
                 break;
             case "medio":
                 premioExp = (int) (Math.random()* 15 + 1);
                 premioOro = (int) (Math.random()* 50 + 1);
+                etNombre.setForeground(Color.ORANGE);
                 break;
             default:
+                etNombre.setForeground(Color.RED);
                 premioExp = 500;
                 premioOro = 1000;
                 break;
