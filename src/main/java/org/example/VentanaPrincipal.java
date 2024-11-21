@@ -18,7 +18,7 @@ public class VentanaPrincipal  {
 
         this.pj = pj;
 
-        marco = new FramePer(600, 500, "El Juego del papu", true);
+        marco = new FramePer(850, 600, "El Juego del papu", true);
 
         panelPrincipal = new JPanel(new BorderLayout());
         panelSuperior = new JPanel();
@@ -56,7 +56,7 @@ public class VentanaPrincipal  {
         panelSuperior.add(etAtributos);
         panelSuperior.add(pj.getBarraVida());
 
-        etImagen.setIcon(new ImageIcon("src/SPRITES/pngtree-enchanted-forest-at-night-square-format-3d-digital-illustration-of-a-image_3717224.jpg"));
+        etImagen.setIcon(new ImageIcon("src/SPRITES/castillo.jpg"));
         panelPrincipal.add(etImagen, BorderLayout.CENTER);
         botonExplorar.addActionListener(e -> nuevaExploracion());
         botonTienda.addActionListener(e -> abrirTienda());

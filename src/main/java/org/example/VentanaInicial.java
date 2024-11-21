@@ -6,8 +6,6 @@ import org.example.clases.Paladin;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
 public class VentanaInicial extends JFrame {
     private Personaje personajeSeleccionado;
@@ -48,9 +46,9 @@ public class VentanaInicial extends JFrame {
         add(panelBotones, BorderLayout.SOUTH); // Coloca los botones en la parte inferior.
     }
 
-    private void seleccionarClase(Personaje personaje) {
-        this.personajeSeleccionado = personaje;
-        JOptionPane.showMessageDialog(this, "Has elegido: " + personaje.getNombre());
+    private void seleccionarClase(Personaje pj) {
+        this.personajeSeleccionado = pj;
+        JOptionPane.showMessageDialog(this, "Has elegido: " + pj.getNombre());
         dispose(); // Cierra la ventana.
     }
 

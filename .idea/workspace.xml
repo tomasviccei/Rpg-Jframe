@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="Ventana de inicio y clases fr &amp; fs">
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Enemigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Enemigo.java" afterDir="false" />
+    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="Correccion de la ruta de la imagen principal">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clases/Caballero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/clases/Caballero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,6 +59,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;VentanaInicial&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tomas/IdeaProjects/juegojava&quot;,
     &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/tomas/IdeaProjects/springproject/juegojava/src/main/java/org/example/Main.java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
@@ -148,7 +149,23 @@
       <option name="project" value="LOCAL" />
       <updated>1732198083266</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Correccion de la ruta de la imagen principal">
+      <option name="closed" value="true" />
+      <created>1732201795326</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1732201795326</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Correccion de la ruta de la imagen principal">
+      <option name="closed" value="true" />
+      <created>1732201820913</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1732201820913</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -159,6 +176,7 @@
     <MESSAGE value="Creando tienda, pelea jefe final y solucionando bugs" />
     <MESSAGE value="Arreglando bugs y demas detalles" />
     <MESSAGE value="Ventana de inicio y clases fr &amp; fs" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ventana de inicio y clases fr &amp; fs" />
+    <MESSAGE value="Correccion de la ruta de la imagen principal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correccion de la ruta de la imagen principal" />
   </component>
 </project>
