@@ -32,6 +32,7 @@ public class VentanaFinal {
         else rutaImagen = new ImageIcon("src/SPRITES/Muerte.png");
 
         imagen = new JLabel(rutaImagen);
+        this.pj = pj;
 
     }
 
@@ -54,6 +55,7 @@ public class VentanaFinal {
         }
 
         areaTexto.setText(mensajeFinal);
+        areaTexto.setEditable(false);
     }
 
     private void crearEscena() {
@@ -64,7 +66,7 @@ public class VentanaFinal {
 
 
         marco.add(panelPrincipal);
-        marco.setSize(800,700);
+        marco.setSize(900,700);
         marco.setLocationRelativeTo(null);
         marco.setModal(true);
     }

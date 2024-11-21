@@ -44,11 +44,7 @@ public class Exploracion {
         botHuir = new JButton("Huir");
     }
 
-    public void comenzarExploracion() {
 
-        decidirDificultad();
-        iniciarInterfaz();
-    }
     
     private void decidirDificultad(){
         
@@ -56,7 +52,7 @@ public class Exploracion {
         numExploracion ++;
         enemigo = Enemigo.generarEnemigo(numRandom);
 
-        if(enemigo.getNombre().equals("Jefe")) esJefe = true;
+        if(enemigo.getNombre().equals("Bestia de tres cabezas")) esJefe = true;
     }
     
     private void iniciarInterfaz(){
@@ -73,13 +69,14 @@ public class Exploracion {
         botAtacar.addActionListener(e -> atacar());
         botHuir.addActionListener(e -> {
             numExploracion++;
-            //pj.setOro(pj.getOro() - 10);
             marco.dispose();
         });
 
         panelInferior.add(botAtacar);
         panelInferior.add(new JLabel("           "));
-        if(esJefe) botHuir.setEnabled(false);
+        if(esJefe) {
+            botHuir.setEnabled(false);
+        }
         panelInferior.add(botHuir);
 
         panelPrincipal.add(panelSuperior, BorderLayout.NORTH);
@@ -95,6 +92,11 @@ public class Exploracion {
         
     }
 
+    public void comenzarExploracion() {
+
+        decidirDificultad();
+        iniciarInterfaz();
+    }
 
     //Metodo de ataque
     private void atacar() {
