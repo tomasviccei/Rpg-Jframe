@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="Correccion de la ruta de la imagen principal">
+    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="cambio de imagen principal">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732201820913</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="cambio de imagen principal">
+      <option name="closed" value="true" />
+      <created>1732203188286</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1732203188286</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -177,6 +183,7 @@
     <MESSAGE value="Arreglando bugs y demas detalles" />
     <MESSAGE value="Ventana de inicio y clases fr &amp; fs" />
     <MESSAGE value="Correccion de la ruta de la imagen principal" />
-    <option name="LAST_COMMIT_MESSAGE" value="Correccion de la ruta de la imagen principal" />
+    <MESSAGE value="cambio de imagen principal" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambio de imagen principal" />
   </component>
 </project>
