@@ -1,14 +1,11 @@
 package org.example;
 
-import org.example.clases.Caballero;
-import org.example.clases.Mago;
-import org.example.clases.Paladin;
-
 import javax.swing.*;
 import java.awt.*;
 
 public class VentanaInicial extends JFrame {
-    private Personaje personajeSeleccionado;
+    private String claseSeleccionada;
+    private String nombrePersonaje;
 
     public VentanaInicial() {
         setTitle("Selecciona tu Clase");
@@ -18,7 +15,7 @@ public class VentanaInicial extends JFrame {
         setLayout(new BorderLayout()); // Usa BorderLayout para separar imagen y botones.
 
         // Cargar la imagen.
-        ImageIcon imagenInicio = new ImageIcon("src/SPRITES/Inicio.png"); // Asegúrate de que "Inicio.png" esté en la misma carpeta o usa la ruta completa.
+        ImageIcon imagenInicio = new ImageIcon("src/SPRITES/Inicio.png"); // Asegúrate de que "Inicio.png" esté en la ruta correcta.
         JLabel etiquetaImagen = new JLabel(imagenInicio);
         etiquetaImagen.setHorizontalAlignment(SwingConstants.CENTER);
         add(etiquetaImagen, BorderLayout.CENTER);
@@ -33,9 +30,9 @@ public class VentanaInicial extends JFrame {
         JButton botonPaladin = new JButton("Paladín");
 
         // Agregar acciones a los botones.
-        botonCaballero.addActionListener(e -> seleccionarClase(new Caballero("Caballero")));
-        botonMago.addActionListener(e -> seleccionarClase(new Mago("Mago")));
-        botonPaladin.addActionListener(e -> seleccionarClase(new Paladin("Paladín")));
+        botonCaballero.addActionListener(e -> seleccionarClase("Caballero"));
+        botonMago.addActionListener(e -> seleccionarClase("Mago"));
+        botonPaladin.addActionListener(e -> seleccionarClase("Paladin"));
 
         // Agregar botones al panel.
         panelBotones.add(botonCaballero);
@@ -46,13 +43,25 @@ public class VentanaInicial extends JFrame {
         add(panelBotones, BorderLayout.SOUTH); // Coloca los botones en la parte inferior.
     }
 
-    private void seleccionarClase(Personaje pj) {
-        this.personajeSeleccionado = pj;
-        JOptionPane.showMessageDialog(this, "Has elegido: " + pj.getNombre());
+    private void seleccionarClase(String clase) {
+        claseSeleccionada = clase;
+
+        // Solicitar el nombre del personaje al usuario.
+        nombrePersonaje = JOptionPane.showInputDialog(this, "Introduce el nombre de tu personaje:");
+        if (nombrePersonaje == null || nombrePersonaje.trim().isEmpty()) {
+            JOptionPane.showMessageDialog(this, "Por favor, introduce un nombre válido.");
+            return;
+        }
+
+        JOptionPane.showMessageDialog(this, "Has elegido: " + claseSeleccionada + " con el nombre " + nombrePersonaje);
         dispose(); // Cierra la ventana.
     }
 
-    public Personaje getPersonajeSeleccionado() {
-        return personajeSeleccionado;
+    public String getClaseSeleccionada() {
+        return claseSeleccionada;
+    }
+
+    public String getNombrePersonaje() {
+        return nombrePersonaje;
     }
 }

@@ -1,0 +1,17 @@
+{
+  "Caballero": {
+    "ataque": 8,
+    "defensa": 3,
+    "vidaMax": 100
+  },
+  "Mago": {
+    "ataque": 12,
+    "defensa": 1,
+    "vidaMax": 80
+  },
+  "Paladin": {
+    "ataque": 6,
+    "defensa": 4,
+    "vidaMax": 120
+  }
+}
