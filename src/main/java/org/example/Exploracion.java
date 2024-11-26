@@ -9,7 +9,7 @@ public class Exploracion {
 
     private JPanel panelPrincipal, panelSuperior, panelInferior, panelEnemigo, panelEnemigoSec;
 
-    private JButton botAtacar, botHuir;
+    private JButton botAtacar, botEspecial, botHuir;
 
     private JTextArea infoTexto;
     private JScrollPane barraDes;
@@ -41,6 +41,7 @@ public class Exploracion {
         barraDes.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
         botAtacar = new JButton("Atacar");
+        botEspecial = new JButton("Habilidad Especial");
         botHuir = new JButton("Huir");
     }
 
@@ -67,12 +68,14 @@ public class Exploracion {
         panelEnemigo.add(panelEnemigoSec);
         
         botAtacar.addActionListener(e -> atacar());
+        botEspecial.addActionListener(e -> especial());
         botHuir.addActionListener(e -> {
             numExploracion++;
             marco.dispose();
         });
 
         panelInferior.add(botAtacar);
+        panelInferior.add(botEspecial);
         panelInferior.add(new JLabel("           "));
         if(esJefe) {
             botHuir.setEnabled(false);
@@ -97,6 +100,40 @@ public class Exploracion {
         decidirDificultad();
         iniciarInterfaz();
     }
+
+
+    private void especial(){
+
+        pj.habilidadEspecial(enemigo);
+        infoTexto.setText(infoTexto.getText() + pj.getNombre() +
+                " realiza la habilidad especial: " + pj.getHabilidadEspecial() + ".\n");
+
+        enemigo.establecerVida(enemigo.getVidaActual());
+
+        // Chequear si el enemigo ha muerto
+        if (!enemigo.isEstaVivo()) {
+            enemigoDerrotado();
+        } else {
+            // Si el enemigo sigue vivo, realiza su ataque
+            enemigo.atacar(pj);
+            int damage = enemigo.getAtaque() - pj.getDefensa();
+            if (damage <= 0) damage = 1;
+
+            infoTexto.setText(infoTexto.getText() + enemigo.getNombre() +
+                    " realiza un ataque causando " + damage + " puntos de daño a " + pj.getNombre() + ".\n");
+
+            pj.setVidaActual(pj.getVidaActual() - damage);
+            pj.establecerVida(pj.getVidaActual());
+
+            // Chequear si el personaje ha muerto
+            if (!pj.isEstaVivo()) {
+                derrota();
+            }
+        }
+
+
+    }
+
 
     //Metodo de ataque
     private void atacar() {
@@ -134,6 +171,7 @@ public class Exploracion {
 
     private void enemigoDerrotado() {
         botAtacar.setEnabled(false);
+        botEspecial.setEnabled(false);
         botHuir.setText("Salir");
 
         infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha sido derrotado.\n"

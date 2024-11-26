@@ -48,7 +48,7 @@ public class VentanaInicial extends JFrame {
 
     private void seleccionarClase(Personaje pj) {
         this.personajeSeleccionado = pj;
-        JOptionPane.showMessageDialog(this, "Has elegido: " + pj.getNombre());
+        //JOptionPane.showMessageDialog(this, "Has elegido: " + pj.getNombre());
         dispose(); // Cierra la ventana.
     }
 

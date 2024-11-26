@@ -3,13 +3,15 @@ package org.example;
 public class Personaje extends Entidad {
 
     private int nivel, oro, exp, expNecesaria;
+    private String habilidadEspecial;
 
-    public Personaje(String nombre, int ataque, int defensa, double vidaMax) {
+    public Personaje(String nombre, int ataque, int defensa, double vidaMax, String habilidadEspecial) {
         super(nombre, ataque, defensa, vidaMax);
         nivel = 1;
         oro = 0;
         exp = 0;
         expNecesaria = 10;
+        this.habilidadEspecial = habilidadEspecial;
     }
 
     public void subirExp(int cantidad) {
@@ -27,6 +29,14 @@ public class Personaje extends Entidad {
         setVidaActual((int)getVidaMax());
         establecerVida((int)getVidaMax());
         expNecesaria += (expNecesaria + 5);
+    }
+
+    public void habilidadEspecial(Entidad enemigo){
+
+    }
+
+    public String getHabilidadEspecial(){
+        return habilidadEspecial;
     }
 
     public int getNivel() {

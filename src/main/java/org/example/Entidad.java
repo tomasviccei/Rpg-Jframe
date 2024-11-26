@@ -52,6 +52,7 @@ public class Entidad implements IAtacable {
     }
 
 
+
     public JProgressBar getBarraVida() {
         return barraVida;
     }
