@@ -9,7 +9,7 @@ public class Exploracion {
 
     private JPanel panelPrincipal, panelSuperior, panelInferior, panelEnemigo, panelEnemigoSec;
 
-    private JButton botAtacar, botHuir;
+    private JButton botAtacar, botHuir, botHabilidadEspecial;
 
     private JTextArea infoTexto;
     private JScrollPane barraDes;
@@ -41,6 +41,7 @@ public class Exploracion {
         barraDes.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
         botAtacar = new JButton("Atacar");
+        botHabilidadEspecial = new JButton("Habilidad Especial");
         botHuir = new JButton("Huir");
     }
 
@@ -67,12 +68,15 @@ public class Exploracion {
         panelEnemigo.add(panelEnemigoSec);
         
         botAtacar.addActionListener(e -> atacar());
+        botHabilidadEspecial.addActionListener(e -> usarHabilidadEspecial());
         botHuir.addActionListener(e -> {
             numExploracion++;
             marco.dispose();
         });
 
         panelInferior.add(botAtacar);
+        panelInferior.add(new JLabel("           "));
+        panelInferior.add(botHabilidadEspecial);
         panelInferior.add(new JLabel("           "));
         if(esJefe) {
             botHuir.setEnabled(false);
@@ -130,6 +134,64 @@ public class Exploracion {
 
     }
 
+    private void usarHabilidadEspecial(){
+
+        int damage;
+
+        if (pj.getManaMax()>= pj.getCostoManaHabilidad()) {
+            pj.setManaActual(pj.getManaActual() - pj.getCostoManaHabilidad());
+            switch (pj.getHabilidadEspecial()) {
+
+                case "Espada Divina":
+                    infoTexto.setText(infoTexto.getText() + pj.getNombre() + " usa " + pj.getHabilidadEspecial());
+                    damage = 22 - enemigo.getDefensa();
+                    if(damage <= 0)  damage = 1;
+                    infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha recibido " + damage + " puntos de daño" + ".\n" + ".\n");
+                    enemigo.setVidaActual(enemigo.getVidaActual() - damage);
+                    break;
+
+                case "Bola de Fuego":
+                    infoTexto.setText(infoTexto.getText() + pj.getNombre() + " usa " + pj.getHabilidadEspecial());
+                    damage = 30 - enemigo.getDefensa();
+                    if(damage <= 0)  damage = 1;
+                    infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha recibido " + damage + " puntos de daño" + ".\n" + ".\n");
+                    enemigo.setVidaActual(enemigo.getVidaActual() - damage);
+                    break;
+
+                case "Bendicion Divina":
+                    infoTexto.setText(infoTexto.getText() + pj.getNombre() + " usa " + pj.getHabilidadEspecial());
+                    double nuevaVida = pj.getVidaActual() + 20;
+                    if (nuevaVida > pj.getVidaMax()) {
+                        nuevaVida = pj.getVidaMax();
+                    }
+                    pj.setVidaActual((int) nuevaVida);
+                    infoTexto.setText(infoTexto.getText() + " activa " + pj.getHabilidadEspecial() + " y se cura 20 de vida!");
+                    break;
+
+                default:
+                    System.out.println("Habilidad especial desconocida.");
+                    break;
+            }
+        } else {
+            System.out.println("No tienes suficiente mana para usar " + pj.getHabilidadEspecial() + ".");
+        }
+
+        if(!enemigo.isEstaVivo()) {
+            enemigoDerrotado();
+        }
+        //Hace que el enemigo ataque/ se podria implementar que utilice una habilidad especial
+        else {
+            enemigo.atacar(pj);
+            infoTexto.setText(infoTexto.getText() + enemigo.getNombre() +
+                    " Realiza un ataque que causa " + enemigo.getAtaque() + " puntos de daño"+ ".\n" + ".\n");
+            damage = enemigo.getAtaque() - pj.getDefensa();
+            if(damage <= 0)  damage = 1;
+            infoTexto.setText(infoTexto.getText() + pj.getNombre() + " ha recibido un ataque que le causa " + damage + " puntos de daño " + ".\n" + ".\n");
+            pj.establecerVida(pj.getVidaActual());
+
+            if(!pj.isEstaVivo()) derrota();
+        }
+    }
 
 
     private void enemigoDerrotado() {

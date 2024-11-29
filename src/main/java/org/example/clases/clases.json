@@ -1,17 +1,29 @@
-{
-  "Caballero": {
-    "ataque": 8,
-    "defensa": 3,
-    "vidaMax": 100
-  },
-  "Mago": {
-    "ataque": 12,
-    "defensa": 1,
-    "vidaMax": 80
-  },
-  "Paladin": {
-    "ataque": 6,
-    "defensa": 4,
-    "vidaMax": 120
-  }
-}
+[
+    {
+        "nombre": "Caballero",
+        "vidaMax": 100,
+        "manaMax": 50,
+        "ataque": 5,
+        "defensa": 5,
+        "habilidadEspecial": "Espada Divina",
+        "costoManaHabilidad": 25
+    },
+    {
+        "nombre": "Mago",
+        "vidaMax": 80,
+        "manaMax": 100,
+        "ataque": 8,
+        "defensa": 0,
+        "habilidadEspecial": "Bola de Fuego",
+        "costoManaHabilidad": 15
+    },
+    {
+        "nombre": "Paladín",
+        "vidaMax": 120,
+        "manaMax": 80,
+        "ataque": 3,
+        "defensa": 7,
+        "habilidadEspecial": "Bendicion Divina",
+        "costoManaHabilidad": 25
+    }
+]

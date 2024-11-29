@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="cambio de imagen principal">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/LectorClases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/clases/clases.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2024_12_00_[Changes]1/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2024_12_00__Changes_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Entidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Entidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Exploracion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Exploracion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/IAtacable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/IAtacable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LectorClases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LectorClases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Personaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Personaje.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clases/Caballero.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clases/Mago.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clases/Paladin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clases/clases.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/clases/clases.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +33,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="VentanaInicial" />
+        <entry key="$PROJECT_DIR$" value="ManaJson" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,7 +47,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/tomasviccei/Rpg-Jframe.git&quot;,
-    &quot;accountId&quot;: &quot;ea623c9a-4046-46ca-95f6-a92a5303e5d1&quot;
+    &quot;accountId&quot;: &quot;aa5cb7a4-6a25-4548-b85d-518d39abc821&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -58,28 +61,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;JsonClases&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tomas/IdeaProjects/juegojava&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/tomas/IdeaProjects/springproject/juegojava/src/main/java/org/example/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MTHome&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "JsonClases",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/tomas/IdeaProjects/juegojava",
+    "onboarding.tips.debug.path": "C:/Users/tomas/IdeaProjects/springproject/juegojava/src/main/java/org/example/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\franc\IdeaProjects\Rpg-Jframe\src\main\java\org\example\clases" />
       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src" />
       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\main" />
       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\SPRITES" />
       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\main\java\org\example" />
+      <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\main\SPRITES" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

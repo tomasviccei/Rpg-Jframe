@@ -1,11 +1,11 @@
 package org.example;
 
+
 import javax.swing.*;
 import java.awt.*;
 
 public class VentanaInicial extends JFrame {
-    private String claseSeleccionada;
-    private String nombrePersonaje;
+    private Personaje personajeSeleccionado;
 
     public VentanaInicial() {
         setTitle("Selecciona tu Clase");
@@ -15,7 +15,7 @@ public class VentanaInicial extends JFrame {
         setLayout(new BorderLayout()); // Usa BorderLayout para separar imagen y botones.
 
         // Cargar la imagen.
-        ImageIcon imagenInicio = new ImageIcon("src/SPRITES/Inicio.png"); // Asegúrate de que "Inicio.png" esté en la ruta correcta.
+        ImageIcon imagenInicio = new ImageIcon("src/SPRITES/Inicio.png"); // Asegúrate de que "Inicio.png" esté en la misma carpeta o usa la ruta completa.
         JLabel etiquetaImagen = new JLabel(imagenInicio);
         etiquetaImagen.setHorizontalAlignment(SwingConstants.CENTER);
         add(etiquetaImagen, BorderLayout.CENTER);
@@ -32,7 +32,7 @@ public class VentanaInicial extends JFrame {
         // Agregar acciones a los botones.
         botonCaballero.addActionListener(e -> seleccionarClase("Caballero"));
         botonMago.addActionListener(e -> seleccionarClase("Mago"));
-        botonPaladin.addActionListener(e -> seleccionarClase("Paladin"));
+        botonPaladin.addActionListener(e -> seleccionarClase("Paladín"));
 
         // Agregar botones al panel.
         panelBotones.add(botonCaballero);
@@ -44,24 +44,17 @@ public class VentanaInicial extends JFrame {
     }
 
     private void seleccionarClase(String clase) {
-        claseSeleccionada = clase;
-
-        // Solicitar el nombre del personaje al usuario.
-        nombrePersonaje = JOptionPane.showInputDialog(this, "Introduce el nombre de tu personaje:");
-        if (nombrePersonaje == null || nombrePersonaje.trim().isEmpty()) {
-            JOptionPane.showMessageDialog(this, "Por favor, introduce un nombre válido.");
-            return;
+        // Crear el personaje usando el método LectorClases
+        try {
+            this.personajeSeleccionado = LectorClases.crearPersonaje(clase, clase); // El nombre del personaje es el mismo que la clase.
+            JOptionPane.showMessageDialog(this, "Has elegido: " + personajeSeleccionado.getNombre());
+            dispose(); // Cierra la ventana.
+        } catch (IllegalArgumentException e) {
+            JOptionPane.showMessageDialog(this, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
         }
-
-        JOptionPane.showMessageDialog(this, "Has elegido: " + claseSeleccionada + " con el nombre " + nombrePersonaje);
-        dispose(); // Cierra la ventana.
     }
 
-    public String getClaseSeleccionada() {
-        return claseSeleccionada;
-    }
-
-    public String getNombrePersonaje() {
-        return nombrePersonaje;
+    public Personaje getPersonajeSeleccionado() {
+        return personajeSeleccionado;
     }
 }
