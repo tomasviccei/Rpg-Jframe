@@ -6,7 +6,7 @@
         "ataque": 5,
         "defensa": 5,
         "habilidadEspecial": "Espada Divina",
-        "costoManaHabilidad": 25
+        "costoManaHabilidad": 10
     },
     {
         "nombre": "Mago",
@@ -15,15 +15,15 @@
         "ataque": 8,
         "defensa": 0,
         "habilidadEspecial": "Bola de Fuego",
-        "costoManaHabilidad": 15
+        "costoManaHabilidad": 25
     },
     {
         "nombre": "Paladín",
         "vidaMax": 120,
         "manaMax": 80,
-        "ataque": 3,
+        "ataque": 4,
         "defensa": 7,
         "habilidadEspecial": "Bendicion Divina",
-        "costoManaHabilidad": 25
+        "costoManaHabilidad": 20
     }
 ]

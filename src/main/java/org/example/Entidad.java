@@ -51,25 +51,26 @@ public class Entidad implements IAtacable {
         }
     }
 
-    public void habilidadEspecial(IAtacable enemigo){
-        enemigo.recibirHabilidad(ataque);
-    }
-    @Override
-    public void recibirHabilidad(int cantidad) {
-        if (estaVivo) {
-            int cantidadTotal = cantidad - defensa;
-            if (cantidadTotal <= 0) cantidadTotal = 1;
-            vidaActual -= cantidadTotal;
-            if (vidaActual <= 0) {
-                estaVivo = false;
-                vidaActual = 0;
-            }
-        }
-    }
+//    public void habilidadEspecial(IAtacable enemigo){
+//        enemigo.recibirHabilidad(ataque);
+//    }
+//    @Override
+//    public void recibirHabilidad(int cantidad) {
+//        if (estaVivo) {
+//            int cantidadTotal = cantidad - defensa;
+//            if (cantidadTotal <= 0) cantidadTotal = 1;
+//            vidaActual -= cantidadTotal;
+//            if (vidaActual <= 0) {
+//                estaVivo = false;
+//                vidaActual = 0;
+//            }
+//        }
+//    }
 
     public JProgressBar getBarraVida() {
         return barraVida;
     }
+
 
     public void setBarraVida(JProgressBar barraVida) {
         this.barraVida = barraVida;

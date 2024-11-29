@@ -138,8 +138,9 @@ public class Exploracion {
 
         int damage;
 
-        if (pj.getManaMax()>= pj.getCostoManaHabilidad()) {
+        if (pj.getManaActual()>= pj.getCostoManaHabilidad()) {
             pj.setManaActual(pj.getManaActual() - pj.getCostoManaHabilidad());
+            pj.establecerMana(pj.getManaActual());
             switch (pj.getHabilidadEspecial()) {
 
                 case "Espada Divina":
@@ -147,7 +148,9 @@ public class Exploracion {
                     damage = 22 - enemigo.getDefensa();
                     if(damage <= 0)  damage = 1;
                     infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha recibido " + damage + " puntos de daño" + ".\n" + ".\n");
-                    enemigo.setVidaActual(enemigo.getVidaActual() - damage);
+                    enemigo.recibirAtaque(damage);
+                    enemigo.establecerVida(enemigo.getVidaActual());
+                    pj.establecerMana(pj.getManaActual());
                     break;
 
                 case "Bola de Fuego":
@@ -155,7 +158,9 @@ public class Exploracion {
                     damage = 30 - enemigo.getDefensa();
                     if(damage <= 0)  damage = 1;
                     infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha recibido " + damage + " puntos de daño" + ".\n" + ".\n");
-                    enemigo.setVidaActual(enemigo.getVidaActual() - damage);
+                    enemigo.recibirAtaque(damage);
+                    enemigo.establecerVida(enemigo.getVidaActual());
+                    pj.establecerMana(pj.getManaActual());
                     break;
 
                 case "Bendicion Divina":
@@ -166,14 +171,13 @@ public class Exploracion {
                     }
                     pj.setVidaActual((int) nuevaVida);
                     infoTexto.setText(infoTexto.getText() + " activa " + pj.getHabilidadEspecial() + " y se cura 20 de vida!");
+                    pj.establecerMana(pj.getManaActual());
                     break;
 
-                default:
-                    System.out.println("Habilidad especial desconocida.");
-                    break;
             }
         } else {
-            System.out.println("No tienes suficiente mana para usar " + pj.getHabilidadEspecial() + ".");
+            infoTexto.setText(infoTexto.getText() + "No tienes el mana suficiente. \n " );
+            botHabilidadEspecial.setEnabled(false);
         }
 
         if(!enemigo.isEstaVivo()) {
@@ -196,6 +200,7 @@ public class Exploracion {
 
     private void enemigoDerrotado() {
         botAtacar.setEnabled(false);
+        botHabilidadEspecial.setEnabled(false);
         botHuir.setText("Salir");
 
         infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha sido derrotado.\n"

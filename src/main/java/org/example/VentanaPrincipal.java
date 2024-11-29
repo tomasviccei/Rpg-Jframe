@@ -35,7 +35,6 @@ public class VentanaPrincipal  {
         botonExplorar = new JButton("Explorar");
         botonTienda = new JButton("Tienda");
         botonSalir = new JButton("Salir");
-// Crear boton de seleccion de personaje y tambien crear logica para seleccionar pj
 
     }
 
@@ -47,7 +46,6 @@ public class VentanaPrincipal  {
 
     public void iniciarEscena(){
 
-//elegirPersonaje()  ---> crear metodo y clase
         modFuentes();
         panelSuperior.add(etNombre);
         panelSuperior.add(etNivel);
@@ -55,6 +53,7 @@ public class VentanaPrincipal  {
         panelSuperior.add(etOro);
         panelSuperior.add(etAtributos);
         panelSuperior.add(pj.getBarraVida());
+        panelSuperior.add(pj.getBarraMana());
 
         etImagen.setIcon(new ImageIcon("src/SPRITES/castillo.jpg"));
         panelPrincipal.add(etImagen, BorderLayout.CENTER);

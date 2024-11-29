@@ -132,6 +132,8 @@ public class Tienda {
                 if(pj.getOro()>=100) {
                     pj.setVidaActual((int) pj.getVidaMax());
                     pj.establecerVida(pj.getVidaActual());
+                    pj.setManaActual((int) pj.getManaMax());
+                    pj.establecerMana(pj.getManaActual());
                     pj.setOro(pj.getOro() - 100);
                     vp.getEtOro().setText(" $: " + pj.getOro());
                 }

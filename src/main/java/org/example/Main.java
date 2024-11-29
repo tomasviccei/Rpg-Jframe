@@ -7,7 +7,7 @@ public class Main {
 
         while (ventanaInicial.getPersonajeSeleccionado() == null) {
             try {
-                Thread.sleep(100); // Pequeña pausa para evitar consumo innecesario de CPU.
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

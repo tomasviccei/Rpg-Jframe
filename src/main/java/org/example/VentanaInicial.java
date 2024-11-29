@@ -44,14 +44,8 @@ public class VentanaInicial extends JFrame {
     }
 
     private void seleccionarClase(String clase) {
-        // Crear el personaje usando el método LectorClases
-        try {
-            this.personajeSeleccionado = LectorClases.crearPersonaje(clase, clase); // El nombre del personaje es el mismo que la clase.
-            JOptionPane.showMessageDialog(this, "Has elegido: " + personajeSeleccionado.getNombre());
-            dispose(); // Cierra la ventana.
-        } catch (IllegalArgumentException e) {
-            JOptionPane.showMessageDialog(this, e.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
-        }
+            this.personajeSeleccionado = LectorClases.crearPersonaje(clase, clase);
+            dispose();
     }
 
     public Personaje getPersonajeSeleccionado() {
