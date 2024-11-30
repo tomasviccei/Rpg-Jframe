@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="cambio de imagen principal">
+    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="agregando reinicio de mana en subida de nivel">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LectorClases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LectorClases.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="ManaJson" />
+        <entry key="$PROJECT_DIR$" value="JuegoTerminado" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -55,7 +56,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "JuegoTerminado",
+    "git-widget-placeholder": "agregando-stream",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/tomas/IdeaProjects/juegojava",
     "onboarding.tips.debug.path": "C:/Users/tomas/IdeaProjects/springproject/juegojava/src/main/java/org/example/Main.java",
@@ -199,7 +200,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732893053468</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="agregando reinicio de mana en subida de nivel">
+      <option name="closed" value="true" />
+      <created>1733006177905</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1733006177905</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -213,6 +222,7 @@
     <MESSAGE value="Correccion de la ruta de la imagen principal" />
     <MESSAGE value="cambio de imagen principal" />
     <MESSAGE value="Json prueba" />
-    <option name="LAST_COMMIT_MESSAGE" value="Json prueba" />
+    <MESSAGE value="agregando reinicio de mana en subida de nivel" />
+    <option name="LAST_COMMIT_MESSAGE" value="agregando reinicio de mana en subida de nivel" />
   </component>
 </project>
