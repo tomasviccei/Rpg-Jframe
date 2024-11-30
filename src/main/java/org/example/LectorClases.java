@@ -16,18 +16,17 @@ public class LectorClases {
         try {
             JsonNode root = mapper.readTree(new File(RUTA_JSON));
 
-            // Convertir el JsonNode en un Stream utilizando StreamSupport
             Optional<JsonNode> datosClaseOpt =
                     StreamSupport.stream(root.spliterator(), false) // Convertimos el iterador a un stream
                             .filter(datosClase -> datosClase.has("nombre") &&
                                     datosClase.get("nombre").asText().equalsIgnoreCase(clase))
                             .findFirst();  // Tomamos el primer elemento que coincida
 
-            // Si la clase no se encuentra, lanzamos la excepción
+
             JsonNode datosClase = datosClaseOpt
                     .orElseThrow(() -> new IllegalArgumentException("Clase no encontrada: " + clase));
 
-            // Extraemos los datos de la clase
+
             int ataque = datosClase.get("ataque").asInt();
             int defensa = datosClase.get("defensa").asInt();
             double vidaMax = datosClase.get("vidaMax").asDouble();

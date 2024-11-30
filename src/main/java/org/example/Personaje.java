@@ -54,8 +54,6 @@ public class Personaje extends Entidad {
         expNecesaria += (expNecesaria + 5);
     }
 
-    public void habilidadEspecial() {
-    }
 
     public void setManaActual(int manaActual) {
         this.manaActual = manaActual;
@@ -69,25 +67,16 @@ public class Personaje extends Entidad {
         return habilidadEspecial;
     }
 
-    public void setHabilidadEspecial(String habilidadEspecial) {
-        this.habilidadEspecial = habilidadEspecial;
-    }
 
     public double getManaMax() {
         return manaMax;
     }
 
-    public void setManaMax(int manaMax) {
-        this.manaMax = manaMax;
-    }
 
     public int getCostoManaHabilidad() {
         return costoManaHabilidad;
     }
 
-    public void setCostoManaHabilidad(int costoManaHabilidad) {
-        this.costoManaHabilidad = costoManaHabilidad;
-    }
 
     public int getNivel() {
         return nivel;
@@ -97,25 +86,16 @@ public class Personaje extends Entidad {
         return barraMana;
     }
 
-    public void setNivel(int nivel) {
-        this.nivel = nivel;
-    }
 
     public int getExp() {
         return exp;
     }
 
-    public void setExp(int exp) {
-        this.exp = exp;
-    }
 
     public int getExpNecesaria() {
         return expNecesaria;
     }
 
-    public void setExpNecesaria(int expNecesaria) {
-        this.expNecesaria = expNecesaria;
-    }
 
     public int getOro() {
         return oro;

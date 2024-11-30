@@ -6,7 +6,7 @@ import java.awt.*;
 public class VentanaPrincipal  {
 
     private FramePer marco;
-    private JPanel panelPrincipal, panelSuperior, panelInferior;  //Agregar panel seleccion personajes
+    private JPanel panelPrincipal, panelSuperior, panelInferior;
     private JLabel etNombre, etNivel, etExp, etOro, etAtributos;
     private JLabel etImagen;
 

@@ -9,20 +9,20 @@ public class VentanaInicial extends JFrame {
 
     public VentanaInicial() {
         setTitle("Selecciona tu Clase");
-        setSize(900, 700); // Ajusta el tamaño para la imagen y botones.
+        setSize(900, 700);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
-        setLayout(new BorderLayout()); // Usa BorderLayout para separar imagen y botones.
+        setLayout(new BorderLayout());
 
 
-        ImageIcon imagenInicio = new ImageIcon("src/SPRITES/Inicio.png"); // Asegúrate de que "Inicio.png" esté en la misma carpeta o usa la ruta completa.
+        ImageIcon imagenInicio = new ImageIcon("src/SPRITES/Inicio.png");
         JLabel etiquetaImagen = new JLabel(imagenInicio);
         etiquetaImagen.setHorizontalAlignment(SwingConstants.CENTER);
         add(etiquetaImagen, BorderLayout.CENTER);
 
 
         JPanel panelBotones = new JPanel();
-        panelBotones.setLayout(new GridLayout(1, 3, 10, 10)); // 3 botones en fila, con espaciado.
+        panelBotones.setLayout(new GridLayout(1, 3, 10, 10));
 
 
         JButton botonCaballero = new JButton("Caballero");
