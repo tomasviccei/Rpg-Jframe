@@ -35,7 +35,7 @@ public class Personaje extends Entidad {
     }
 
 
-    // Métodos para subir de nivel y ganar experiencia
+
     public void subirExp(int cantidad) {
         exp += cantidad;
         while (exp >= expNecesaria) subirNivel();

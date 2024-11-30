@@ -79,7 +79,7 @@ public class Tienda {
         panelInferior.add(botSalir);
         panelPrincipal.add(panelInferior, BorderLayout.SOUTH);
 
-        marco.setSize(800,700);
+        marco.setSize(850,600);
         marco.setLocationRelativeTo(null);
         marco.setModal(true);
         marco.add(panelPrincipal);

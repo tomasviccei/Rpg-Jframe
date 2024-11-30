@@ -11,6 +11,7 @@ public class Entidad implements IAtacable {
     private boolean estaVivo;
     private JProgressBar barraVida;
 
+
     public Entidad(String nombre, int ataque, int defensa, double vidaMax) {
         this.nombre = nombre;
         this.ataque = ataque;
@@ -25,13 +26,13 @@ public class Entidad implements IAtacable {
 
     }
 
-        public void establecerVida(int vida){
-            barraVida.setValue(vida);
-            barraVida.setForeground(Color.GREEN);
-            barraVida.setStringPainted(true);
-            barraVida.setString(vidaActual + "/" + (int)vidaMax);
+    public void establecerVida(int vida) {
+        barraVida.setValue(vida);
+        barraVida.setForeground(Color.GREEN);
+        barraVida.setStringPainted(true);
+        barraVida.setString(vidaActual + "/" + (int) vidaMax);
 
-        }
+    }
 
     @Override
     public void atacar(IAtacable enemigo) {
@@ -50,22 +51,7 @@ public class Entidad implements IAtacable {
             }
         }
     }
-
-//    public void habilidadEspecial(IAtacable enemigo){
-//        enemigo.recibirHabilidad(ataque);
-//    }
-//    @Override
-//    public void recibirHabilidad(int cantidad) {
-//        if (estaVivo) {
-//            int cantidadTotal = cantidad - defensa;
-//            if (cantidadTotal <= 0) cantidadTotal = 1;
-//            vidaActual -= cantidadTotal;
-//            if (vidaActual <= 0) {
-//                estaVivo = false;
-//                vidaActual = 0;
-//            }
-//        }
-//    }
+    
 
     public JProgressBar getBarraVida() {
         return barraVida;
@@ -126,3 +112,6 @@ public class Entidad implements IAtacable {
 
 
 }
+
+
+

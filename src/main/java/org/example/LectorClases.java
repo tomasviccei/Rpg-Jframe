@@ -12,12 +12,12 @@ public class LectorClases {
     public static Personaje crearPersonaje(String clase, String nombre) {
         ObjectMapper mapper = new ObjectMapper();
         try {
-            // Cargar el archivo JSON que contiene el arreglo de clases
+
             JsonNode root = mapper.readTree(new File(RUTA_JSON));
 
-            // Recorrer el arreglo de clases
+
             for (JsonNode datosClase : root) {
-                // Comparar el nombre de la clase con el campo "nombre" de cada objeto en el JSON
+
                 if (datosClase.get("nombre").asText().equalsIgnoreCase(clase)) {
 
                     int ataque = datosClase.get("ataque").asInt();
@@ -27,12 +27,12 @@ public class LectorClases {
                     String habilidadEspecial = datosClase.get("habilidadEspecial").asText();
                     int costoManaHabilidad = datosClase.get("costoManaHabilidad").asInt();
 
-                    // Crear y devolver el personaje con los datos obtenidos
+
                     return new Personaje(nombre, ataque, defensa, vidaMax, manaMax, habilidadEspecial, costoManaHabilidad);
                 }
             }
 
-            // Si no se encuentra la clase, lanzar una excepción
+
             throw new IllegalArgumentException("Clase no encontrada: " + clase);
 
         } catch (IOException e) {

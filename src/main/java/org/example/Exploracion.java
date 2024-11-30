@@ -89,7 +89,7 @@ public class Exploracion {
 
         marco.add(panelPrincipal);
         marco.setUndecorated(true);
-        marco.setSize(900,500);
+        marco.setSize(900,600);
         marco.setLocationRelativeTo(null);
         marco.setModal(true);
         marco.setVisible(true);
@@ -102,7 +102,7 @@ public class Exploracion {
         iniciarInterfaz();
     }
 
-    //Metodo de ataque
+
     private void atacar() {
 
         int damage;
@@ -115,11 +115,13 @@ public class Exploracion {
         infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha recibido " + damage + " puntos de daño" + ".\n" + ".\n");
 
         enemigo.establecerVida(enemigo.getVidaActual());
-        //Chequea que el enemigo este muerto
+
+
+
         if(!enemigo.isEstaVivo()) {
             enemigoDerrotado();
         }
-        //Hace que el enemigo ataque/ se podria implementar que utilice una habilidad especial
+
         else {
             enemigo.atacar(pj);
             infoTexto.setText(infoTexto.getText() + enemigo.getNombre() +
@@ -183,7 +185,7 @@ public class Exploracion {
         if(!enemigo.isEstaVivo()) {
             enemigoDerrotado();
         }
-        //Hace que el enemigo ataque/ se podria implementar que utilice una habilidad especial
+
         else {
             enemigo.atacar(pj);
             infoTexto.setText(infoTexto.getText() + enemigo.getNombre() +
@@ -221,6 +223,7 @@ public class Exploracion {
         }
 
     }
+
     private void derrota() {
 
         VentanaFinal v = new VentanaFinal(VentanaFinal.DERROTA, pj);

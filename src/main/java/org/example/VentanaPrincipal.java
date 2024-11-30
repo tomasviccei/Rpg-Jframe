@@ -23,13 +23,13 @@ public class VentanaPrincipal  {
         panelPrincipal = new JPanel(new BorderLayout());
         panelSuperior = new JPanel();
         panelInferior = new JPanel();
-// Crear panel de seleccion de personaje
+
 
         etNombre = new JLabel(pj.getNombre() + "  ");
         etNivel = new JLabel(" Nivel: " + pj.getNivel());
         etExp = new JLabel(" Exp: " + pj.getExp() + "/" + pj.getExpNecesaria());
         etOro = new JLabel(" $: " + pj.getOro());
-        etAtributos = new JLabel(" Atck: " + pj.getAtaque() + " | Def: " + pj.getDefensa() + " Vida");
+        etAtributos = new JLabel(" Atck: " + pj.getAtaque() + " | Def: " + pj.getDefensa());
         etImagen = new JLabel();
 
         botonExplorar = new JButton("Explorar");
@@ -57,9 +57,11 @@ public class VentanaPrincipal  {
 
         etImagen.setIcon(new ImageIcon("src/SPRITES/castillo.jpg"));
         panelPrincipal.add(etImagen, BorderLayout.CENTER);
+
         botonExplorar.addActionListener(e -> nuevaExploracion());
         botonTienda.addActionListener(e -> abrirTienda());
         botonSalir.addActionListener(e -> marco.dispose());
+
         panelInferior.add(botonExplorar);
         panelInferior.add(botonTienda);
         panelInferior.add(botonSalir);

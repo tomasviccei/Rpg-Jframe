@@ -14,33 +14,33 @@ public class VentanaInicial extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout()); // Usa BorderLayout para separar imagen y botones.
 
-        // Cargar la imagen.
+
         ImageIcon imagenInicio = new ImageIcon("src/SPRITES/Inicio.png"); // Asegúrate de que "Inicio.png" esté en la misma carpeta o usa la ruta completa.
         JLabel etiquetaImagen = new JLabel(imagenInicio);
         etiquetaImagen.setHorizontalAlignment(SwingConstants.CENTER);
         add(etiquetaImagen, BorderLayout.CENTER);
 
-        // Panel para los botones.
+
         JPanel panelBotones = new JPanel();
         panelBotones.setLayout(new GridLayout(1, 3, 10, 10)); // 3 botones en fila, con espaciado.
 
-        // Botones de selección.
+
         JButton botonCaballero = new JButton("Caballero");
         JButton botonMago = new JButton("Mago");
         JButton botonPaladin = new JButton("Paladín");
 
-        // Agregar acciones a los botones.
+
         botonCaballero.addActionListener(e -> seleccionarClase("Caballero"));
         botonMago.addActionListener(e -> seleccionarClase("Mago"));
         botonPaladin.addActionListener(e -> seleccionarClase("Paladín"));
 
-        // Agregar botones al panel.
+
         panelBotones.add(botonCaballero);
         panelBotones.add(botonMago);
         panelBotones.add(botonPaladin);
 
-        // Agregar el panel de botones a la ventana.
-        add(panelBotones, BorderLayout.SOUTH); // Coloca los botones en la parte inferior.
+
+        add(panelBotones, BorderLayout.SOUTH); 
     }
 
     private void seleccionarClase(String clase) {
