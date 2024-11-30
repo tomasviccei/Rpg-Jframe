@@ -66,7 +66,7 @@ public class VentanaFinal {
 
 
         marco.add(panelPrincipal);
-        marco.setSize(900,700);
+        marco.setSize(850,600);
         marco.setLocationRelativeTo(null);
         marco.setModal(true);
     }

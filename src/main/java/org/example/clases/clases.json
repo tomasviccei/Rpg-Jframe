@@ -1,0 +1,29 @@
+[
+    {
+        "nombre": "Caballero",
+        "vidaMax": 100,
+        "manaMax": 50,
+        "ataque": 5,
+        "defensa": 5,
+        "habilidadEspecial": "Espada Divina",
+        "costoManaHabilidad": 10
+    },
+    {
+        "nombre": "Mago",
+        "vidaMax": 80,
+        "manaMax": 100,
+        "ataque": 8,
+        "defensa": 0,
+        "habilidadEspecial": "Bola de Fuego",
+        "costoManaHabilidad": 25
+    },
+    {
+        "nombre": "Paladín",
+        "vidaMax": 120,
+        "manaMax": 80,
+        "ataque": 4,
+        "defensa": 7,
+        "habilidadEspecial": "Bendicion Divina",
+        "costoManaHabilidad": 20
+    }
+]

@@ -9,7 +9,7 @@ public class Exploracion {
 
     private JPanel panelPrincipal, panelSuperior, panelInferior, panelEnemigo, panelEnemigoSec;
 
-    private JButton botAtacar, botHuir;
+    private JButton botAtacar, botHuir, botHabilidadEspecial;
 
     private JTextArea infoTexto;
     private JScrollPane barraDes;
@@ -41,6 +41,7 @@ public class Exploracion {
         barraDes.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
 
         botAtacar = new JButton("Atacar");
+        botHabilidadEspecial = new JButton("Habilidad Especial");
         botHuir = new JButton("Huir");
     }
 
@@ -67,12 +68,15 @@ public class Exploracion {
         panelEnemigo.add(panelEnemigoSec);
         
         botAtacar.addActionListener(e -> atacar());
+        botHabilidadEspecial.addActionListener(e -> usarHabilidadEspecial());
         botHuir.addActionListener(e -> {
             numExploracion++;
             marco.dispose();
         });
 
         panelInferior.add(botAtacar);
+        panelInferior.add(new JLabel("           "));
+        panelInferior.add(botHabilidadEspecial);
         panelInferior.add(new JLabel("           "));
         if(esJefe) {
             botHuir.setEnabled(false);
@@ -85,7 +89,7 @@ public class Exploracion {
 
         marco.add(panelPrincipal);
         marco.setUndecorated(true);
-        marco.setSize(900,500);
+        marco.setSize(900,600);
         marco.setLocationRelativeTo(null);
         marco.setModal(true);
         marco.setVisible(true);
@@ -98,7 +102,7 @@ public class Exploracion {
         iniciarInterfaz();
     }
 
-    //Metodo de ataque
+
     private void atacar() {
 
         int damage;
@@ -111,11 +115,13 @@ public class Exploracion {
         infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha recibido " + damage + " puntos de daño" + ".\n" + ".\n");
 
         enemigo.establecerVida(enemigo.getVidaActual());
-        //Chequea que el enemigo este muerto
+
+
+
         if(!enemigo.isEstaVivo()) {
             enemigoDerrotado();
         }
-        //Hace que el enemigo ataque/ se podria implementar que utilice una habilidad especial
+
         else {
             enemigo.atacar(pj);
             infoTexto.setText(infoTexto.getText() + enemigo.getNombre() +
@@ -130,10 +136,73 @@ public class Exploracion {
 
     }
 
+    private void usarHabilidadEspecial(){
+
+        int damage;
+
+        if (pj.getManaActual()>= pj.getCostoManaHabilidad()) {
+            pj.setManaActual(pj.getManaActual() - pj.getCostoManaHabilidad());
+            pj.establecerMana(pj.getManaActual());
+            switch (pj.getHabilidadEspecial()) {
+
+                case "Espada Divina":
+                    infoTexto.setText(infoTexto.getText() + pj.getNombre() + " usa " + pj.getHabilidadEspecial());
+                    damage = 22 - enemigo.getDefensa();
+                    if(damage <= 0)  damage = 1;
+                    infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha recibido " + damage + " puntos de daño" + ".\n" + ".\n");
+                    enemigo.recibirAtaque(damage);
+                    enemigo.establecerVida(enemigo.getVidaActual());
+                    pj.establecerMana(pj.getManaActual());
+                    break;
+
+                case "Bola de Fuego":
+                    infoTexto.setText(infoTexto.getText() + pj.getNombre() + " usa " + pj.getHabilidadEspecial());
+                    damage = 30 - enemigo.getDefensa();
+                    if(damage <= 0)  damage = 1;
+                    infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha recibido " + damage + " puntos de daño" + ".\n" + ".\n");
+                    enemigo.recibirAtaque(damage);
+                    enemigo.establecerVida(enemigo.getVidaActual());
+                    pj.establecerMana(pj.getManaActual());
+                    break;
+
+                case "Bendicion Divina":
+                    infoTexto.setText(infoTexto.getText() + pj.getNombre() + " usa " + pj.getHabilidadEspecial());
+                    double nuevaVida = pj.getVidaActual() + 20;
+                    if (nuevaVida > pj.getVidaMax()) {
+                        nuevaVida = pj.getVidaMax();
+                    }
+                    pj.setVidaActual((int) nuevaVida);
+                    infoTexto.setText(infoTexto.getText() + " activa " + pj.getHabilidadEspecial() + " y se cura 20 de vida!");
+                    pj.establecerMana(pj.getManaActual());
+                    break;
+
+            }
+        } else {
+            infoTexto.setText(infoTexto.getText() + "No tienes el mana suficiente. \n " );
+            botHabilidadEspecial.setEnabled(false);
+        }
+
+        if(!enemigo.isEstaVivo()) {
+            enemigoDerrotado();
+        }
+
+        else {
+            enemigo.atacar(pj);
+            infoTexto.setText(infoTexto.getText() + enemigo.getNombre() +
+                    " Realiza un ataque que causa " + enemigo.getAtaque() + " puntos de daño"+ ".\n" + ".\n");
+            damage = enemigo.getAtaque() - pj.getDefensa();
+            if(damage <= 0)  damage = 1;
+            infoTexto.setText(infoTexto.getText() + pj.getNombre() + " ha recibido un ataque que le causa " + damage + " puntos de daño " + ".\n" + ".\n");
+            pj.establecerVida(pj.getVidaActual());
+
+            if(!pj.isEstaVivo()) derrota();
+        }
+    }
 
 
     private void enemigoDerrotado() {
         botAtacar.setEnabled(false);
+        botHabilidadEspecial.setEnabled(false);
         botHuir.setText("Salir");
 
         infoTexto.setText(infoTexto.getText() + enemigo.getNombre() + " ha sido derrotado.\n"
@@ -154,6 +223,7 @@ public class Exploracion {
         }
 
     }
+
     private void derrota() {
 
         VentanaFinal v = new VentanaFinal(VentanaFinal.DERROTA, pj);

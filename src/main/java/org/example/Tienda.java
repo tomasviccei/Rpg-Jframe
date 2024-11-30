@@ -79,7 +79,7 @@ public class Tienda {
         panelInferior.add(botSalir);
         panelPrincipal.add(panelInferior, BorderLayout.SOUTH);
 
-        marco.setSize(800,700);
+        marco.setSize(850,600);
         marco.setLocationRelativeTo(null);
         marco.setModal(true);
         marco.add(panelPrincipal);
@@ -132,6 +132,8 @@ public class Tienda {
                 if(pj.getOro()>=100) {
                     pj.setVidaActual((int) pj.getVidaMax());
                     pj.establecerVida(pj.getVidaActual());
+                    pj.setManaActual((int) pj.getManaMax());
+                    pj.establecerMana(pj.getManaActual());
                     pj.setOro(pj.getOro() - 100);
                     vp.getEtOro().setText(" $: " + pj.getOro());
                 }

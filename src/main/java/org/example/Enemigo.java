@@ -30,7 +30,7 @@ public class Enemigo extends Entidad{
         switch (dificultad) {
             case "facil":
                 premioExp = (int) (Math.random()* 6 + 1);
-                premioOro = (int) (Math.random()* 20+ 1);
+                premioOro = (int) (Math.random()* 20 + 1);
                 etNombre.setForeground(Color.GREEN);
                 break;
             case "medio":
@@ -51,15 +51,16 @@ public class Enemigo extends Entidad{
     public static Enemigo generarEnemigo (int i) {
         Enemigo e;
         int nEnemigo = (int) (Math.random()*3);
-        int nvida = (int) (Math.random()*30);
-        int nAtaque = (int) (Math.random()*5);
+        int nVida = (int) (Math.random()*30);
+        int nAtaque = (int) (Math.random()*6);
         int nDef = (int) (Math.random()*2);
+
         if(i<30){
-            e = new Enemigo(enemigoFacil[nEnemigo],nAtaque + 1,nDef,nvida +15, "facil" );
-        }else if(i<100){
-            e = new Enemigo(enemigoMedio[nEnemigo],nAtaque + 4,nDef+2,nvida +30, "medio" );
+            e = new Enemigo(enemigoFacil[nEnemigo],nAtaque + 1,nDef,nVida +15, "facil" );
+        }else if(i<180){
+            e = new Enemigo(enemigoMedio[nEnemigo],nAtaque + 4,nDef+2,nVida +30, "medio" );
         }else {
-            e = new Enemigo("Bestia de tres cabezas",nAtaque +15,nDef+5,nvida +150, "Jefe" );
+            e = new Enemigo("Bestia de tres cabezas",nAtaque +15,nDef+5,nVida +150, "Jefe" );
         }
         return e;
     }

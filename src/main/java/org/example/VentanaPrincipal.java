@@ -18,24 +18,23 @@ public class VentanaPrincipal  {
 
         this.pj = pj;
 
-        marco = new FramePer(600, 500, "El Juego del papu", true);
+        marco = new FramePer(850, 600, "El Juego del papu", true);
 
         panelPrincipal = new JPanel(new BorderLayout());
         panelSuperior = new JPanel();
         panelInferior = new JPanel();
-// Crear panel de seleccion de personaje
+
 
         etNombre = new JLabel(pj.getNombre() + "  ");
         etNivel = new JLabel(" Nivel: " + pj.getNivel());
         etExp = new JLabel(" Exp: " + pj.getExp() + "/" + pj.getExpNecesaria());
         etOro = new JLabel(" $: " + pj.getOro());
-        etAtributos = new JLabel(" Atck: " + pj.getAtaque() + " | Def: " + pj.getDefensa() + " Vida");
+        etAtributos = new JLabel(" Atck: " + pj.getAtaque() + " | Def: " + pj.getDefensa());
         etImagen = new JLabel();
 
         botonExplorar = new JButton("Explorar");
         botonTienda = new JButton("Tienda");
         botonSalir = new JButton("Salir");
-// Crear boton de seleccion de personaje y tambien crear logica para seleccionar pj
 
     }
 
@@ -47,7 +46,6 @@ public class VentanaPrincipal  {
 
     public void iniciarEscena(){
 
-//elegirPersonaje()  ---> crear metodo y clase
         modFuentes();
         panelSuperior.add(etNombre);
         panelSuperior.add(etNivel);
@@ -55,12 +53,15 @@ public class VentanaPrincipal  {
         panelSuperior.add(etOro);
         panelSuperior.add(etAtributos);
         panelSuperior.add(pj.getBarraVida());
+        panelSuperior.add(pj.getBarraMana());
 
-        etImagen.setIcon(new ImageIcon("src/SPRITES/pngtree-enchanted-forest-at-night-square-format-3d-digital-illustration-of-a-image_3717224.jpg"));
+        etImagen.setIcon(new ImageIcon("src/SPRITES/castillo.jpg"));
         panelPrincipal.add(etImagen, BorderLayout.CENTER);
+
         botonExplorar.addActionListener(e -> nuevaExploracion());
         botonTienda.addActionListener(e -> abrirTienda());
         botonSalir.addActionListener(e -> marco.dispose());
+
         panelInferior.add(botonExplorar);
         panelInferior.add(botonTienda);
         panelInferior.add(botonSalir);
