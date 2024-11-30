@@ -49,6 +49,8 @@ public class Personaje extends Entidad {
         getBarraVida().setMaximum((int) getVidaMax());
         setVidaActual((int) getVidaMax());
         establecerVida((int) getVidaMax());
+        setManaActual((int) getManaMax());
+        establecerMana((int) getManaMax());
         expNecesaria += (expNecesaria + 5);
     }
 
