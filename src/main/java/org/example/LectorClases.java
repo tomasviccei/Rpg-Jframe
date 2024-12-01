@@ -17,10 +17,10 @@ public class LectorClases {
             JsonNode root = mapper.readTree(new File(RUTA_JSON));
 
             Optional<JsonNode> datosClaseOpt =
-                    StreamSupport.stream(root.spliterator(), false) // Convertimos el iterador a un stream
+                    StreamSupport.stream(root.spliterator(), false)
                             .filter(datosClase -> datosClase.has("nombre") &&
                                     datosClase.get("nombre").asText().equalsIgnoreCase(clase))
-                            .findFirst();  // Tomamos el primer elemento que coincida
+                            .findFirst();
 
 
             JsonNode datosClase = datosClaseOpt

@@ -14,8 +14,6 @@ public class Enemigo extends Entidad{
     private static String[] enemigoMedio = {"Mago oscuro", "Golem", "Druida", "Dragon"};
 
 
-
-
     public Enemigo(String nombre, int ataque, int defensa, double vidaMax, String dificultad) {
         super(nombre, ataque, defensa, vidaMax);
 
@@ -51,16 +49,16 @@ public class Enemigo extends Entidad{
     public static Enemigo generarEnemigo (int i) {
         Enemigo e;
         int nEnemigo = (int) (Math.random()*3);
-        int nVida = (int) (Math.random()*30);
-        int nAtaque = (int) (Math.random()*6);
+        int nVida = (int) (Math.random()*32);
+        int nAtaque = (int) (Math.random()*7);
         int nDef = (int) (Math.random()*2);
 
         if(i<30){
-            e = new Enemigo(enemigoFacil[nEnemigo],nAtaque + 1,nDef,nVida +15, "facil" );
+            e = new Enemigo(enemigoFacil[nEnemigo],nAtaque + 2,nDef,nVida +20, "facil" );
         }else if(i<180){
             e = new Enemigo(enemigoMedio[nEnemigo],nAtaque + 4,nDef+2,nVida +30, "medio" );
         }else {
-            e = new Enemigo("Bestia de tres cabezas",nAtaque +15,nDef+5,nVida +150, "Jefe" );
+            e = new Enemigo("Bestia de tres cabezas",nAtaque +25,nDef+5,nVida +150, "Jefe" );
         }
         return e;
     }

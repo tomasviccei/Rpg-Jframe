@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="agregando reinicio de mana en subida de nivel">
+    <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="cambio de imagen principal">
+      <change afterPath="$PROJECT_DIR$/src/SPRITES/larreta.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2024_12_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2024_12_00__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Enemigo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Enemigo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/LectorClases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/LectorClases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Personaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Personaje.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaFinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaFinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clases/clases.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/clases/clases.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="JuegoTerminado" />
+        <entry key="$PROJECT_DIR$" value="PruebaJuego" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,9 +45,6 @@
     &quot;accountId&quot;: &quot;aa5cb7a4-6a25-4548-b85d-518d39abc821&quot;
   }
 }</component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -61,7 +61,7 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "PruebaJuego",
+    "git-widget-placeholder": "balanceandoPersonajes",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/tomas/IdeaProjects/juegojava",
     "onboarding.tips.debug.path": "C:/Users/tomas/IdeaProjects/springproject/juegojava/src/main/java/org/example/Main.java",
@@ -73,11 +73,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ignacio\IdeaProjects\Rpg-Jframe\src\SPRITES" />
       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src" />
       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\main" />
       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\SPRITES" />
       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\main\java\org\example" />
-      <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\main\SPRITES" />
     </key>
   </component>
   <component name="RunManager">
@@ -205,15 +205,7 @@
       <option name="project" value="LOCAL" />
       <updated>1732893053468</updated>
     </task>
-    <task id="LOCAL-00013" summary="agregando reinicio de mana en subida de nivel">
-      <option name="closed" value="true" />
-      <created>1733006177905</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1733006177905</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -227,7 +219,6 @@
     <MESSAGE value="Correccion de la ruta de la imagen principal" />
     <MESSAGE value="cambio de imagen principal" />
     <MESSAGE value="Json prueba" />
-    <MESSAGE value="agregando reinicio de mana en subida de nivel" />
-    <option name="LAST_COMMIT_MESSAGE" value="agregando reinicio de mana en subida de nivel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Json prueba" />
   </component>
 </project>
