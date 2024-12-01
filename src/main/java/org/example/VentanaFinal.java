@@ -37,26 +37,11 @@ public class VentanaFinal {
     }
 
     public void abrir(){
-        mansaje();
         crearEscena();
         marco.setUndecorated(true);
         marco.setVisible(true);
     }
 
-    private void mansaje() {
-        String mensajeFinal;
-        if(condicion == VICTORIA){
-            mensajeFinal = "Ganaste papu, la verdad no te tenia fe pero bien ahí.\n" + pj.getNombre() + " Nivel: "
-                    +pj.getNivel() + " Has obtenido " + pj.getOro() + " monedas de oro";
-        }else {
-            mensajeFinal = "La quedaste como un terrible petón.\n"
-                    + "La proxima trata de no ser tan malo si?.\n"
-                    + "Dale probá de nuevo que no es tan dificil";
-        }
-
-        areaTexto.setText(mensajeFinal);
-        areaTexto.setEditable(false);
-    }
 
     private void crearEscena() {
         panelPrincipal.add(imagen, BorderLayout.NORTH);
@@ -66,7 +51,7 @@ public class VentanaFinal {
 
 
         marco.add(panelPrincipal);
-        marco.setSize(850,600);
+        marco.setSize(900,600);
         marco.setLocationRelativeTo(null);
         marco.setModal(true);
     }
