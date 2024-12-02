@@ -6,7 +6,7 @@ import java.awt.*;
 public class Entidad implements IAtacable {
 
     private String nombre;
-    private int vidaActual, ataque, defensa; //, habilidadEspecial;
+    private int vidaActual, ataque, defensa;
     private double vidaMax;
     private boolean estaVivo;
     private JProgressBar barraVida;
