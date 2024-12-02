@@ -1,0 +1,145 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"e9193461-4dda-4ecd-8e10-d535fd97fa10\" name=\"Changes\" comment=\"cambio de imagen principal\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Entidad.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Entidad.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Exploracion.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Exploracion.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/IAtacable.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/IAtacable.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Personaje.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Personaje.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/Tienda.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/Tienda.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/org/example/clases/clases.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/org/example/clases/clases.json\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"ManaJson\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;tomasviccei&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/tomasviccei/Rpg-Jframe.git&quot;,\r\n    &quot;accountId&quot;: &quot;aa5cb7a4-6a25-4548-b85d-518d39abc821&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 3\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2p5CZogRCYxE594YtTazpGRWHJA\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">{\r\n  &quot;keyToString&quot;: {\r\n    &quot;Application.Main.executor&quot;: &quot;Run&quot;,\r\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\r\n    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,\r\n    &quot;git-widget-placeholder&quot;: &quot;JsonClases&quot;,\r\n    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,\r\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/tomas/IdeaProjects/juegojava&quot;,\r\n    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/tomas/IdeaProjects/springproject/juegojava/src/main/java/org/example/Main.java&quot;,\r\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\r\n    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,\r\n    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;\r\n  }\r\n}</component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\tomas\\IdeaProjects\\springproject\\juegojava\\src\" />\r\n      <recent name=\"C:\\Users\\tomas\\IdeaProjects\\springproject\\juegojava\\src\\main\" />\r\n      <recent name=\"C:\\Users\\tomas\\IdeaProjects\\springproject\\juegojava\\src\\SPRITES\" />\r\n      <recent name=\"C:\\Users\\tomas\\IdeaProjects\\springproject\\juegojava\\src\\main\\java\\org\\example\" />\r\n      <recent name=\"C:\\Users\\tomas\\IdeaProjects\\springproject\\juegojava\\src\\main\\SPRITES\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"e9193461-4dda-4ecd-8e10-d535fd97fa10\" name=\"Changes\" comment=\"\" />\r\n      <created>1732046609783</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1732046609783</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Rpg Poo con jframe\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1732059934760</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1732059934760</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Creando Jframe con imagen\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1732062136426</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1732062136426</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Añadiendo clase exploracion, falta crear interfaz de seleccion de personajes y muerte\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1732111176734</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1732111176734</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Bug de imagenes solucionado, implementacion del metodo de combate basico\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1732157619099</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1732157619099</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Bug de imagenes solucionado, implementacion del metodo de combate basico\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1732189569763</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1732189569763</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"Creando tienda, pelea jefe final y solucionando bugs\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1732190149195</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1732190149195</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Arreglando bugs y demas detalles\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1732191723378</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1732191723378</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Ventana de inicio y clases fr &amp; fs\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1732198083266</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1732198083266</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Correccion de la ruta de la imagen principal\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1732201795326</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1732201795326</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Correccion de la ruta de la imagen principal\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1732201820913</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1732201820913</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"cambio de imagen principal\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1732203188286</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1732203188286</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"Json prueba\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1732893053468</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1732893053468</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"13\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Rpg Poo con jframe\" />\r\n    <MESSAGE value=\"Creando Jframe con imagen\" />\r\n    <MESSAGE value=\"Añadiendo clase exploracion, falta crear interfaz de seleccion de personajes y muerte\" />\r\n    <MESSAGE value=\"Bug de imagenes solucionado, implementacion del metodo de combate basico\" />\r\n    <MESSAGE value=\"Creando tienda, pelea jefe final y solucionando bugs\" />\r\n    <MESSAGE value=\"Arreglando bugs y demas detalles\" />\r\n    <MESSAGE value=\"Ventana de inicio y clases fr &amp; fs\" />\r\n    <MESSAGE value=\"Correccion de la ruta de la imagen principal\" />\r\n    <MESSAGE value=\"cambio de imagen principal\" />\r\n    <MESSAGE value=\"Json prueba\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Json prueba\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 53b066b4c68137af0bcc0d8c10c8fa6eec7139a4)
++++ b/.idea/workspace.xml	(date 1732911575704)
+@@ -5,15 +5,8 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="e9193461-4dda-4ecd-8e10-d535fd97fa10" name="Changes" comment="cambio de imagen principal">
++      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2024_12_00__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_21_11_2024_12_00__Changes_.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Entidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Entidad.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Exploracion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Exploracion.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/IAtacable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/IAtacable.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Personaje.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Personaje.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Tienda.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Tienda.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaInicial.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/VentanaPrincipal.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/clases/clases.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/clases/clases.json" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -30,7 +23,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="ManaJson" />
++        <entry key="$PROJECT_DIR$" value="VentanaInicial" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -41,12 +34,12 @@
+     &quot;assignee&quot;: &quot;tomasviccei&quot;
+   }
+ }</component>
+-  <component name="GithubPullRequestsUISettings">{
+-  &quot;selectedUrlAndAccountId&quot;: {
+-    &quot;url&quot;: &quot;https://github.com/tomasviccei/Rpg-Jframe.git&quot;,
+-    &quot;accountId&quot;: &quot;aa5cb7a4-6a25-4548-b85d-518d39abc821&quot;
+-  }
+-}</component>
++  <component name="GithubPullRequestsUISettings"><![CDATA[{
++  "selectedUrlAndAccountId": {
++    "url": "https://github.com/tomasviccei/Rpg-Jframe.git",
++    "accountId": "b7aebc26-2723-4cc9-b17e-727d8f07153f"
++  }
++}]]></component>
+   <component name="ProjectColorInfo">{
+   &quot;associatedIndex&quot;: 3
+ }</component>
+@@ -58,21 +51,21 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;JsonClases&quot;,
+-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;C:/Users/tomas/IdeaProjects/juegojava&quot;,
+-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/tomas/IdeaProjects/springproject/juegojava/src/main/java/org/example/Main.java&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "Application.Main.executor": "Run",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
++    "git-widget-placeholder": "JsonClases",
++    "kotlin-language-version-configured": "true",
++    "last_opened_file_path": "C:/Users/tomas/IdeaProjects/juegojava",
++    "onboarding.tips.debug.path": "C:/Users/tomas/IdeaProjects/springproject/juegojava/src/main/java/org/example/Main.java",
++    "project.structure.last.edited": "Modules",
++    "project.structure.proportion": "0.0",
++    "project.structure.side.proportion": "0.0",
++    "settings.editor.selected.configurable": "MTHome"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="MoveFile.RECENT_KEYS">
+       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src" />
+@@ -81,6 +74,26 @@
+       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\main\java\org\example" />
+       <recent name="C:\Users\tomas\IdeaProjects\springproject\juegojava\src\main\SPRITES" />
+     </key>
++  </component>
++  <component name="RunManager">
++    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++      <option name="MAIN_CLASS_NAME" value="org.example.Main" />
++      <module name="juegojava" />
++      <extension name="coverage">
++        <pattern>
++          <option name="PATTERN" value="org.example.*" />
++          <option name="ENABLED" value="true" />
++        </pattern>
++      </extension>
++      <method v="2">
++        <option name="Make" enabled="true" />
++      </method>
++    </configuration>
++    <recent_temporary>
++      <list>
++        <item itemvalue="Application.Main" />
++      </list>
++    </recent_temporary>
+   </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+@@ -179,15 +192,7 @@
+       <option name="project" value="LOCAL" />
+       <updated>1732203188286</updated>
+     </task>
+-    <task id="LOCAL-00012" summary="Json prueba">
+-      <option name="closed" value="true" />
+-      <created>1732893053468</created>
+-      <option name="number" value="00012" />
+-      <option name="presentableId" value="LOCAL-00012" />
+-      <option name="project" value="LOCAL" />
+-      <updated>1732893053468</updated>
+-    </task>
+-    <option name="localTasksCounter" value="13" />
++    <option name="localTasksCounter" value="12" />
+     <servers />
+   </component>
+   <component name="VcsManagerConfiguration">
+@@ -200,7 +205,6 @@
+     <MESSAGE value="Ventana de inicio y clases fr &amp; fs" />
+     <MESSAGE value="Correccion de la ruta de la imagen principal" />
+     <MESSAGE value="cambio de imagen principal" />
+-    <MESSAGE value="Json prueba" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Json prueba" />
++    <option name="LAST_COMMIT_MESSAGE" value="cambio de imagen principal" />
+   </component>
+ </project>
+\ No newline at end of file
