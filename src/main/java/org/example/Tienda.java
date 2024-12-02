@@ -42,10 +42,10 @@ public class Tienda {
         imagenPocion = new JLabel(new ImageIcon("src/SPRITES/tienda/pocion.png"));
         imagenMapa = new JLabel(new ImageIcon("src/SPRITES/tienda/map.png"));
 
-        desAtaque = new JLabel("Ataque - 160 Oro.");
-        desDefensa = new JLabel("Defensa - 180 Oro.");
-        desPocion = new JLabel("Pocion - 100 Oro.");
-        desMapa = new JLabel("Mapa - 50 Oro.");
+        desAtaque = new JLabel("Ataque - 170 Oro.");
+        desDefensa = new JLabel("Defensa - 200 Oro.");
+        desPocion = new JLabel("Pocion - 75 Oro.");
+        desMapa = new JLabel("Mapa - 100 Oro.");
 
         botAtaque = new JButton("Comprar");
         botDefensa = new JButton("Comprar");
@@ -109,39 +109,39 @@ public class Tienda {
     private void comprarObjeto(JButton boton, String nombre) {
         switch (nombre){
             case "Ataque":
-                if(pj.getOro()>=160) {
+                if(pj.getOro()>=170) {
                     pj.setAtaque(pj.getAtaque() + 5);
                     vp.getEtAtributos().setText(" Atck: " + pj.getAtaque() + " | Def: " + pj.getDefensa() + " Vida");
-                    pj.setOro(pj.getOro() - 160);
+                    pj.setOro(pj.getOro() - 170);
                     vp.getEtOro().setText(" $: " + pj.getOro());
                     boton.setEnabled(false);
                     agoAtaque = true;
                 }
                 break;
             case "Defensa":
-                if(pj.getOro()>=180) {
+                if(pj.getOro()>=200) {
                     pj.setDefensa(pj.getDefensa() + 3);
                     vp.getEtAtributos().setText(" Atck: " + pj.getAtaque() + " | Def: " + pj.getDefensa() + " Vida");
-                    pj.setOro(pj.getOro() - 180);
+                    pj.setOro(pj.getOro() - 200);
                     vp.getEtOro().setText(" $: " + pj.getOro());
                     boton.setEnabled(false);
                     agoDefensa = true;
                 }
                 break;
             case "Pocion":
-                if(pj.getOro()>=100) {
+                if(pj.getOro()>=75) {
                     pj.setVidaActual((int) pj.getVidaMax());
                     pj.establecerVida(pj.getVidaActual());
                     pj.setManaActual((int) pj.getManaMax());
                     pj.establecerMana(pj.getManaActual());
-                    pj.setOro(pj.getOro() - 100);
+                    pj.setOro(pj.getOro() - 75);
                     vp.getEtOro().setText(" $: " + pj.getOro());
                 }
                 break;
             case "Mapa":
-                if(pj.getOro()>=50) {
+                if(pj.getOro()>=100) {
                     Exploracion.setNumExploracion(250);
-                    pj.setOro(pj.getOro() - 50);
+                    pj.setOro(pj.getOro() - 100);
                     vp.getEtOro().setText(" $: " + pj.getOro());
                     boton.setEnabled(false);
                     agoMapa = true;
